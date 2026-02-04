@@ -908,10 +908,8 @@
                 <h1>Informações práticas e contacto</h1>
                 <div class="contact-info">
                     <h3><i class="fas fa-calendar-alt"></i> Próximos passos</h3>
-                    <p><i class="fas fa-dot-circle"></i> <strong>Inauguração da Sala Digital:</strong> 15 de Março de 2026</p>
-                    <p><i class="fas fa-dot-circle"></i> <strong>Primeiras aulas práticas:</strong> 22 de Março de 2026</p>
-                    <p><i class="fas fa-dot-circle"></i> <strong>Dia de portas abertas para pais:</strong> 29 de Março de 2026</p>
-                    
+                    <p><i class="fas fa-dot-circle"></i> <strong>Inauguração da Sala Digital:</strong> Dia do Fim do ano letivo 2025 - 2026</p>
+                                        
                     <h3 style="margin-top: 30px;"><i class="fas fa-handshake"></i> Parceria responsável</h3>
                     <p><i class="fas fa-school"></i> <strong>Escola:</strong> Complexo Escolar Tatiana - Céu Azul</p>
                     <p><i class="fas fa-laptop-code"></i> <strong>Parceiro tecnológico:</strong> LMB – Soluções Tecnológicas</p>
