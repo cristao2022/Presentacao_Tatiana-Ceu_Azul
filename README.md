@@ -37,7 +37,7 @@
             position: relative;
             width: 100%;
             min-height: 100vh;
-            padding-bottom: 100px; /* Espaço para os dots na parte inferior */
+            padding-bottom: 100px;
         }
 
         .slide {
@@ -50,7 +50,7 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            padding: 100px 60px 120px 60px; /* Padding maior em cima e embaixo */
+            padding: 100px 60px 120px 60px;
             text-align: center;
             color: white;
             opacity: 0;
@@ -354,7 +354,7 @@
 
         .dots-container {
             position: fixed;
-            bottom: 40px; /* Elevado para não sobrepor conteúdo */
+            bottom: 40px;
             left: 50%;
             transform: translateX(-50%);
             display: flex;
@@ -572,8 +572,8 @@
                 <h2>Por que estamos criando uma Sala Digital na nossa escola</h2>
                 <p class="quote">Não formamos apenas alunos.<br>Formamos os engenheiros, médicos, professores e líderes<br>que vão reconstruir e desenvolver Angola.</p>
                 <div class="school-info">
-                    <p>[Nome da Escola]</p>
-                    <p>[Cidade, Província] | Fevereiro de 2026</p>
+                    <p>Complexo Escolar Tatiana - Céu Azul</p>
+                    <p>Cacuaco, Icolo e Bengo | Fevereiro de 2026</p>
                 </div>
             </div>
         </div>
@@ -669,7 +669,7 @@
             <div class="slide-content">
                 <h1>Na prática: o que seu filho fará na Sala Digital</h1>
                 <ul>
-                    <li><i class="fas fa-map"></i> <strong>Geografia:</strong> Explorar mapas interativos das 18 províncias — rios, serras, recursos naturais</li>
+                    <li><i class="fas fa-map"></i> <strong>Geografia:</strong> Explorar mapas interativos das 22 províncias — rios, serras, recursos naturais</li>
                     <li><i class="fas fa-binoculars"></i> <strong>Geografia:</strong> Comparar imagens de satélite de Luanda em 1990 e 2026</li>
                     <li><i class="fas fa-landmark"></i> <strong>História:</strong> "Visitar" virtualmente o Museu Nacional de História Militar</li>
                     <li><i class="fas fa-video"></i> <strong>História:</strong> Assistir depoimentos de heróis da independência</li>
@@ -774,7 +774,7 @@
             <div class="slide-content">
                 <h1>Uma voz que representa muitas famílias</h1>
                 <p class="quote" style="font-size: 1.5em; line-height: 1.8;">
-                    Eu sou mãe solteira, trabalho como quitandeira no Roque Santeiro desde as 5h da manhã.<br><br>
+                    Eu sou mãe solteira, trabalho como quitandeira no mercado do Kicolo desde as 5h da manhã.<br><br>
                     Não tenho condições de comprar computador para meu filho — nem sequer internet em casa.<br><br>
                     Quando soube que a escola terá Sala Digital, chorei de alegria.<br><br>
                     Meu filho não vai ser deixado para trás.<br><br>
@@ -908,17 +908,17 @@
                 <h1>Informações práticas e contacto</h1>
                 <div class="contact-info">
                     <h3><i class="fas fa-calendar-alt"></i> Próximos passos</h3>
-                    <p><i class="fas fa-dot-circle"></i> <strong>Inauguração da Sala Digital:</strong> Dia do Fim do ano letivo 2025 - 2026</p>
+                    <p><i class="fas fa-dot-circle"></i> <strong>Inauguração da Sala Digital:</strong> No dia do fim do ano letivo de 2026</p>
                                         
                     <h3 style="margin-top: 30px;"><i class="fas fa-handshake"></i> Parceria responsável</h3>
-                    <p><i class="fas fa-school"></i> <strong>Escola:</strong> Complexo Escolar Tatiana - Céu Azul</p>
+                    <p><i class="fas fa-school"></i> <strong>Escola:</strong> [Nome completo da Escola]</p>
                     <p><i class="fas fa-laptop-code"></i> <strong>Parceiro tecnológico:</strong> LMB – Soluções Tecnológicas</p>
                     <p><i class="fas fa-cogs"></i> <strong>Âmbito:</strong> Infraestrutura, manutenção e conectividade Internet dedicada</p>
                     
                     <h3 style="margin-top: 30px;"><i class="fas fa-phone"></i> Contactos</h3>
-                    <p><i class="fas fa-building"></i> <strong>Secretaria da Escola:</strong> xxxxxxxxx | info@lmbservices.com</p>
-                    <p><i class="fas fa-user-tie"></i> <strong>Director(a):</strong> JJJJJ] – Tel. 923 xxx xxx</p>
-                    <p><i class="fas fa-user-graduate"></i> <strong>Coordenador do Projecto:</strong> Cristao Cabunga – Telefone/WhatsApp: 923385314</p>
+                    <p><i class="fas fa-building"></i> <strong>Secretaria da Escola:</strong> [Telefone] | [Email]</p>
+                    <p><i class="fas fa-user-tie"></i> <strong>Director(a):</strong> [Nome do Director] – [Telefone]</p>
+                    <p><i class="fas fa-user-graduate"></i> <strong>Coordenador do Projecto:</strong> [Nome] – [Telefone/WhatsApp]</p>
                 </div>
                 <p class="quote" style="font-size: 1.5em; line-height: 1.8; margin-top: 30px;">
                     Não deixemos que a hesitação de hoje<br>
@@ -1006,22 +1006,34 @@
                 document.getElementById('progressBar').style.width = `${progress}%`;
             }
 
-            // Navegação por teclado
+            // Navegação por teclado - CORRIGIDO: PageUp/PageDown não interferem
             document.addEventListener('keydown', function(e) {
-                if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') {
+                // APENAS setas horizontais, espaço, Home, End e números 1-9 navegam entre slides
+                if (e.key === 'ArrowLeft') {
+                    e.preventDefault(); // Previne rolagem horizontal
                     prevSlide();
-                } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ' || e.key === 'PageDown') {
+                } 
+                else if (e.key === 'ArrowRight' || e.key === ' ') {
+                    e.preventDefault(); // Previne rolagem com espaço
                     nextSlide();
-                } else if (e.key === 'Home') {
+                } 
+                else if (e.key === 'Home') {
+                    e.preventDefault();
                     goToSlide(1);
-                } else if (e.key === 'End') {
+                } 
+                else if (e.key === 'End') {
+                    e.preventDefault();
                     goToSlide(totalSlides);
-                } else if (e.key >= '1' && e.key <= '9') {
+                } 
+                else if (e.key >= '1' && e.key <= '9') {
+                    e.preventDefault();
                     const slideNum = parseInt(e.key);
                     if (slideNum <= totalSlides) {
                         goToSlide(slideNum);
                     }
                 }
+                // PageUp, PageDown, ArrowUp, ArrowDown NÃO são tratados aqui
+                // → comportamento padrão do navegador: rolagem da página
             });
 
             // Swipe para mobile
