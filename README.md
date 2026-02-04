@@ -913,14 +913,14 @@
                     <p><i class="fas fa-dot-circle"></i> <strong>Dia de portas abertas para pais:</strong> 29 de Março de 2026</p>
                     
                     <h3 style="margin-top: 30px;"><i class="fas fa-handshake"></i> Parceria responsável</h3>
-                    <p><i class="fas fa-school"></i> <strong>Escola:</strong> [Nome completo da Escola]</p>
+                    <p><i class="fas fa-school"></i> <strong>Escola:</strong> Complexo Escolar Tatiana - Céu Azul</p>
                     <p><i class="fas fa-laptop-code"></i> <strong>Parceiro tecnológico:</strong> LMB – Soluções Tecnológicas</p>
                     <p><i class="fas fa-cogs"></i> <strong>Âmbito:</strong> Infraestrutura, manutenção e conectividade Internet dedicada</p>
                     
                     <h3 style="margin-top: 30px;"><i class="fas fa-phone"></i> Contactos</h3>
-                    <p><i class="fas fa-building"></i> <strong>Secretaria da Escola:</strong> [Telefone] | [Email]</p>
-                    <p><i class="fas fa-user-tie"></i> <strong>Director(a):</strong> [Nome do Director] – [Telefone]</p>
-                    <p><i class="fas fa-user-graduate"></i> <strong>Coordenador do Projecto:</strong> [Nome] – [Telefone/WhatsApp]</p>
+                    <p><i class="fas fa-building"></i> <strong>Secretaria da Escola:</strong> xxxxxxxxx | info@lmbservices.com</p>
+                    <p><i class="fas fa-user-tie"></i> <strong>Director(a):</strong> JJJJJ] – Tel. 923 xxx xxx</p>
+                    <p><i class="fas fa-user-graduate"></i> <strong>Coordenador do Projecto:</strong> Cristao Cabunga – Telefone/WhatsApp: 923385314</p>
                 </div>
                 <p class="quote" style="font-size: 1.5em; line-height: 1.8; margin-top: 30px;">
                     Não deixemos que a hesitação de hoje<br>
